@@ -3,11 +3,11 @@
   flex-direction: column;
 }
 .footer-menu__contact .footer-menu__contact__order-call, .footer-menu__contact .footer-menu__contact__write-us {
-  width: 312px;
+  min-width: 300px;
   height: 54px;
   border: 1.5px solid #D4DEE1;
   border-radius: 6px;
-  margin: 15px 0px;
+  margin: 15px 25px;
   box-sizing: border-box;
   color: #7D8C93;
   background-color: #FFFFFF;
