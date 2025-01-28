@@ -1,0 +1,29 @@
+@import "contact/_contact.scss";
+@import "information/_information.scss";
+@import "social/_social.scss";
+@import "copyrights/_copyrights.scss";
+@import "dev/_dev.scss";
+@import "rectangles/_rectangles.scss";
+
+* {
+        margin: 0px;
+}
+
+.footer-menu {
+
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+
+        width: 100%;
+        background-color: #f0f4f5;
+        z-index: 1;
+
+        *::after {
+            z-index: 3;
+        }
+
+
+
+}

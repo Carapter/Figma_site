@@ -1,0 +1,10 @@
+.footer-menu__copyrights {
+    color: #80888A;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+    * {
+        margin-bottom: 30px;
+    }
+}
