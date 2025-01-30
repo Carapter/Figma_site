@@ -52,11 +52,16 @@
 }
 .footer-menu__social {
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+@media (min-width: 768px) {
+  .footer-menu__social {
+    padding-left: 50px;
+  }
+}
 .footer-menu__copyrights {
   color: #80888A;
   display: flex;
@@ -79,6 +84,7 @@
   width: 200px;
   display: flex;
   justify-content: center;
+  align-self: center;
   padding: 11px 9px;
   border: 1px solid #D4DEE1;
   border-radius: 6px;
@@ -93,15 +99,17 @@
   .footer-menu__dev {
     margin: 0px;
     align-self: center;
+    width: 400px;
   }
 }
 .footer-menu__rectangle {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: end;
   width: 100%;
   z-index: 2;
-  margin-bottom: 87px;
+  margin-left: 20px;
+  margin-bottom: 200px;
 }
 
 @media (min-width: 768px) {
@@ -141,12 +149,11 @@
 
 .footer-menu__container {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 @media (min-width: 768px) {
   .footer-menu__container * {
-    position: static;
     visibility: visible;
   }
   .footer-menu__table {
@@ -157,6 +164,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 35px;
+    margin-top: 35px;
   }
   .footer-menu__container .footer-menu__projects,
   .footer-menu__container .footer-menu__for-clients,

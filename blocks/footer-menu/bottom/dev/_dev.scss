@@ -2,6 +2,7 @@
     width: 200px;
     display: flex;
     justify-content: center;
+    align-self: center;
     padding: 11px 9px;
     border: 1px solid #D4DEE1;
     border-radius: 6px;
@@ -15,7 +16,8 @@
 @media (min-width: 768px) {
     .footer-menu__dev {
         margin: 0px;
-        // align-self:flex-end;
         align-self: center;
+        width: 400px;
+        
     }
 }
