@@ -9,13 +9,9 @@
 }
 .footer-menu__container {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 35px;
-    * {
-        position: absolute;
-        visibility: hidden;
-        width: 100%;
-    }
+    padding-top: 40px;
+    // display: flex;
+    // justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -56,7 +52,6 @@
         }
         .footer-menu__social * {
             align-items: center;
-            // padding: ;
         }
     }
 }
