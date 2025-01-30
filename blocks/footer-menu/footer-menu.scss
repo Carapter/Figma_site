@@ -1,29 +1,37 @@
-@import "contact/_contact.scss";
-@import "information/_information.scss";
-@import "social/_social.scss";
-@import "copyrights/_copyrights.scss";
-@import "dev/_dev.scss";
-@import "rectangles/_rectangles.scss";
-
+@import "top/contact/_contact.scss";
+@import "top/information/_information.scss";
+@import "container/social/_social.scss";
+@import "bottom/copyrights/_copyrights.scss";
+@import "bottom/dev/_dev.scss";
+@import "container/rectangles/_rectangles.scss";
+@import "top/_top.scss";
+@import "container/_container.scss";
+@import "bottom/_bottom.scss";
 * {
         margin: 0px;
 }
 
 .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
 
+    width: 100%;
+    background-color: #f0f4f5;
+    z-index: 1;
+
+    *::after {
+        z-index: 3;
+    }
+}
+@media (min-width: 768px) {
+    .footer-menu__line {
         display: flex;
         justify-content: center;
-        align-items:center;
-        flex-direction: column;
-
-        width: 100%;
-        background-color: #f0f4f5;
-        z-index: 1;
-
-        *::after {
-            z-index: 3;
-        }
-
-
-
+        width: 90%;
+        border-top: 1px solid #EAEAEA;
+        margin-bottom: 30px;
+        visibility: visible;
+    }
 }

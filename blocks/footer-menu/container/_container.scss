@@ -1,0 +1,53 @@
+.footer-menu__table {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 30px;
+}
+.footer-menu__container {
+    width: 100%;
+    padding-top: 20px;   
+}
+
+@media (min-width: 768px) {
+    .footer-menu__container * {
+        visibility: visible;
+    }
+    .footer-menu__table {
+        position: static;
+        visibility: visible;
+    }
+    .footer-menu__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 35px;
+        margin-top: 35px;
+
+        .footer-menu__projects,
+        .footer-menu__for-clients,
+        .footer-menu__container-information,
+        .footer-menu__social  {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 25%;
+            margin: 0;
+            ul {
+                padding: 0px;
+                padding-bottom: 35px;
+            }
+            li {
+                padding-bottom: 11px;
+                font-style: none;
+                list-style-type: none;
+            }
+            
+        }
+        .footer-menu__social * {
+            align-items: center;
+        }
+    }
+}

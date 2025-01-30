@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 .footer-menu__contact .footer-menu__contact__order-call, .footer-menu__contact .footer-menu__contact__write-us {
-  min-width: 300px;
+  min-width: 220px;
   height: 54px;
   border: 1.5px solid #D4DEE1;
   border-radius: 6px;
@@ -13,6 +13,12 @@
   background-color: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+  .footer-menu__contact {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .footer-menu__information {
   display: flex;
   flex-direction: column;
@@ -36,15 +42,26 @@
     display: flex;
     flex-direction: row;
   }
+  .footer-menu__information {
+    justify-content: center;
+    align-items: start;
+  }
+  .footer-menu__information h2 {
+    margin: 0px;
+  }
 }
 .footer-menu__social {
   display: flex;
-  width: 280px;
+  margin-bottom: 25px;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 45px;
 }
 
+@media (min-width: 768px) {
+  .footer-menu__social {
+    padding-left: 50px;
+  }
+}
 .footer-menu__copyrights {
   color: #80888A;
   display: flex;
@@ -56,7 +73,18 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .footer-menu__copyrights {
+    flex-direction: column-reverse;
+    align-items: start;
+    text-align: start;
+  }
+}
 .footer-menu__dev {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
   padding: 11px 9px;
   border: 1px solid #D4DEE1;
   border-radius: 6px;
@@ -67,17 +95,118 @@
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .footer-menu__dev {
+    margin: 0px;
+    align-self: center;
+    width: 400px;
+  }
+}
 .footer-menu__rectangle {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: end;
   width: 100%;
   z-index: 2;
+  margin-left: 20px;
+  margin-bottom: 200px;
 }
 
 @media (min-width: 768px) {
   .footer-menu__rectangle {
     visibility: hidden;
+  }
+}
+.footer-menu__top {
+  width: 100%;
+}
+
+.container.footer-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .container.footer-top {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+  }
+}
+.footer-menu__table {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.footer-menu__container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-menu__container * {
+    visibility: visible;
+  }
+  .footer-menu__table {
+    position: static;
+    visibility: visible;
+  }
+  .footer-menu__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  .footer-menu__container .footer-menu__projects,
+  .footer-menu__container .footer-menu__for-clients,
+  .footer-menu__container .footer-menu__container-information,
+  .footer-menu__container .footer-menu__social {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    margin: 0;
+  }
+  .footer-menu__container .footer-menu__projects ul,
+  .footer-menu__container .footer-menu__for-clients ul,
+  .footer-menu__container .footer-menu__container-information ul,
+  .footer-menu__container .footer-menu__social ul {
+    padding: 0px;
+    padding-bottom: 35px;
+  }
+  .footer-menu__container .footer-menu__projects li,
+  .footer-menu__container .footer-menu__for-clients li,
+  .footer-menu__container .footer-menu__container-information li,
+  .footer-menu__container .footer-menu__social li {
+    padding-bottom: 11px;
+    font-style: none;
+    list-style-type: none;
+  }
+  .footer-menu__container .footer-menu__social * {
+    align-items: center;
+  }
+}
+.footer-menu__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .footer-menu__bottom {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 30px;
   }
 }
 * {
@@ -95,4 +224,15 @@
 }
 .footer-menu *::after {
   z-index: 3;
+}
+
+@media (min-width: 768px) {
+  .footer-menu__line {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-top: 1px solid #EAEAEA;
+    margin-bottom: 30px;
+    visibility: visible;
+  }
 }/*# sourceMappingURL=footer-menu.css.map */

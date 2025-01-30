@@ -1,0 +1,13 @@
+.footer-menu__social {
+    display: flex;
+    // max-width: 180px;
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+    
+    .footer-menu__social {
+        padding-left: 50px;
+    }
+}

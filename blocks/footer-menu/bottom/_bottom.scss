@@ -1,0 +1,15 @@
+.footer-menu__bottom {
+    // visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+}
+
+@media (min-width: 768px) {
+    .footer-menu__bottom {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 30px;
+    }
+}
