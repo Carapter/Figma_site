@@ -1,12 +1,10 @@
 .footer-menu__contact {
-
     display: flex;
     flex-direction: column;
-    
 
     .footer-menu__contact__order-call, .footer-menu__contact__write-us {
         
-        min-width: 300px;
+        min-width: 220px;
         height: 54px;
         border: 1.5px solid #D4DEE1;
         border-radius: 6px;
@@ -16,5 +14,14 @@
         color: #7D8C93;
         background-color: #FFFFFF;
 
+    }
+}
+@media (min-width: 768px) {
+    .footer-menu__contact {
+        // .footer-menu__contact {
+        // display: flex;
+        // flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }

@@ -1,0 +1,21 @@
+.footer-menu__top {
+    width: 100%;
+}
+
+.container.footer-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+    .container.footer-top {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+    }
+    
+}

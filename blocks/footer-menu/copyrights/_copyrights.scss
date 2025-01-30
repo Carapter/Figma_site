@@ -8,3 +8,11 @@
         margin-bottom: 30px;
     }
 }
+
+@media (min-width: 768px) {
+    .footer-menu__copyrights {
+        flex-direction: column-reverse;
+        align-items: start;
+        text-align:start;
+    }
+}
