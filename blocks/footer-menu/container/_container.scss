@@ -9,7 +9,7 @@
 }
 .footer-menu__container {
     width: 100%;
-    padding-top: 20px;   
+    padding-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -31,6 +31,8 @@
         .footer-menu__for-clients,
         .footer-menu__container-information,
         .footer-menu__social  {
+            color: #7D8C93CC;
+
             display: flex;
             flex-direction: column;
             flex-basis: 25%;
