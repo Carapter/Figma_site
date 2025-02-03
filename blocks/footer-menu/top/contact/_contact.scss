@@ -1,9 +1,8 @@
 .footer-menu__contact {
     display: flex;
     flex-direction: column;
-
-    .footer-menu__contact__order-call, .footer-menu__contact__write-us {
-        
+    .footer-menu__contact__order-call,
+    .footer-menu__contact__write-us {    
         min-width: 220px;
         height: 54px;
         border: 1.5px solid #D4DEE1;
@@ -13,15 +12,25 @@
         box-sizing: border-box;
         color: #7D8C93;
         background-color: #FFFFFF;
-
     }
 }
 @media (min-width: 768px) {
     .footer-menu__contact {
-        // .footer-menu__contact {
-        // display: flex;
-        // flex-direction: column;
         flex-direction: row;
         justify-content: space-around;
+    }
+}
+@media (min-width: 1280px) {
+    .footer-menu__contact {
+        justify-content: wrap;
+    }
+    .footer-menu__information {
+        width: 200px;
+    }
+
+
+    .footer-menu__contact__order-call,
+    .footer-menu__contact__write-us {
+        margin: 0px 0px;
     }
 }
