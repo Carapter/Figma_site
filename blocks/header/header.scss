@@ -1,0 +1,25 @@
+@import "top/menu/_menu.scss";
+@import "top/number/_number.scss";
+@import "top/logo/_logo.scss";
+@import "top/email/_email.scss";
+@import "top/button/_button.scss";
+
+.header-bottom {display: none;}
+.header-top__order-call {position: absolute;}
+
+.header-top {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .header-bottom {
+        position: static;
+    }
+}
+@media (min-width: 1280px)  {
+    .header-bottom, .header-bottom>* {
+        display: block;
+    }
+}

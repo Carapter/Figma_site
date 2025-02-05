@@ -36,6 +36,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 .footer-menu__information h2 {
   color: #7D8C93;

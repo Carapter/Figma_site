@@ -1,0 +1,16 @@
+@media (min-width: 1280px) {
+    .header-top__order-call.order-call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        position: static;
+        visibility: visible;
+        height: 50px;
+        width: 250px;
+        background: linear-gradient(#FFC92C,#FFBF06);
+        border-radius: 5px;
+        border: 0px;
+        color: white;
+    }
+}

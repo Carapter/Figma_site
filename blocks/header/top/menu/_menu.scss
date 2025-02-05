@@ -1,0 +1,13 @@
+.header-top__menu {
+    // visibility: visible;
+    * {
+        visibility: visible;
+    }
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 1280px) {
+    .header-top__menu {
+        display: none;
+    }
+}
