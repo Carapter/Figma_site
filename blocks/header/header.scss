@@ -1,0 +1,18 @@
+@import "top/menu/_menu.scss";
+@import "top/number/_number.scss";
+@import "top/logo/_logo.scss";
+@import "top/email/_email.scss";
+@import "top/button/_button.scss";
+
+header {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
+}
+
+.header-top__order-call {position: absolute;}
+.header-top {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #F1F1F1;
+}

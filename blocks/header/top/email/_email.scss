@@ -1,0 +1,15 @@
+.header-top__email {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+}
+@media (min-width: 1280px) {
+    .header-top__email {
+        position: static;
+        visibility: visible;
+        * {
+            align-self: center;
+            margin-right: 15px;
+        }
+    }
+}

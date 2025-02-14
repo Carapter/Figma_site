@@ -1,0 +1,120 @@
+.header-top__menu {
+  display: flex;
+  align-items: center;
+}
+.header-top__menu * {
+  visibility: visible;
+}
+
+@media (min-width: 1280px) {
+  .header-top__menu {
+    display: none;
+  }
+}
+.header-top__number {
+  position: absolute;
+}
+.header-top__number * {
+  visibility: hidden;
+}
+.header-top__number svg, .header-top__number svg > * {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .header-top__number {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-top__number p, .header-top__number h3 {
+    position: static;
+    visibility: visible;
+  }
+}
+@media (min-width: 1280px) {
+  .header-top__number {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  .header-top__number p {
+    visibility: hidden;
+    position: absolute;
+  }
+  .header-top__number svg {
+    position: static;
+    margin-right: 15px;
+  }
+  .header-top__number * {
+    position: static;
+    visibility: visible;
+    align-self: center;
+  }
+}
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-logo * {
+  visibility: visible;
+}
+.header-logo svg {
+  padding-right: 15px;
+}
+
+.header-top__email {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+}
+
+@media (min-width: 1280px) {
+  .header-top__email {
+    position: static;
+    visibility: visible;
+  }
+  .header-top__email * {
+    align-self: center;
+    margin-right: 15px;
+  }
+}
+.header-top__order-call {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .header-top__order-call.order-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    position: static;
+    visibility: visible;
+    height: 50px;
+    width: 250px;
+    background: linear-gradient(#FFC92C, #FFBF06);
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+  }
+}
+header {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
+}
+
+.header-top__order-call {
+  position: absolute;
+}
+
+.header-top {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid #F1F1F1;
+}/*# sourceMappingURL=header.css.map */

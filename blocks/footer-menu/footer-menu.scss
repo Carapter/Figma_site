@@ -20,12 +20,15 @@
     width: 100%;
     background-color: #f0f4f5;
     z-index: 1;
-
     *::after {
         z-index: 3;
     }
 }
 @media (min-width: 768px) {
+//     .footer-menu__top {
+//         width: 100%;
+//         background-color: FFFFFF;
+//     }
     .footer-menu__line {
         display: flex;
         justify-content: center;
